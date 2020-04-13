@@ -11,6 +11,8 @@ I used a Raspberry Pi 3 model B+ and a Playstation Eye connected via USB for rec
 
 The biggest hurdle came when trying to install the `pyloudnorm` Python library, which I'm using for analyzing loudness. `pyloudnorm` has a dependency on the `scipy` library, and my Raspberry Pi kept crashing after an hour or two of trying to build the wheel during install. Even compiling and installing `scipy` from source didn't get around the problem. Ended up having to temporarily increase the Pi's swap space to be the same size as the RAM, which allowed `pyloudnorm`/`scipy` to install successfully.
 
+Simple demo here: https://youtu.be/rODEEVhir1s
+
 ## Setup
 1. Get Rasperry Pi and install RaspianOS
 2. Ensure audio input is working (nice guide here: https://makersportal.com/blog/2018/8/23/recording-audio-on-the-raspberry-pi-with-python-and-a-usb-microphone)
